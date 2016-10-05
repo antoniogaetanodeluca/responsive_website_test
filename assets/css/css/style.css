@@ -1,0 +1,267 @@
+h1, h2, h3, a, a:visited, p {
+  color: #767676; }
+
+a:hover {
+  color: #fff; }
+
+body {
+  font-family: "Arial", Helvetica, sans-serif;
+  background: #eaf0f3; }
+
+a:hover, a:active, a:visited {
+  text-decoration: underline; }
+
+*:focus {
+  outline: none; }
+
+header#header {
+  margin-bottom: 15px; }
+  @media screen and (min-width: 768) {
+    header#header {
+      margin-bottom: 50px; } }
+  header#header .logo-container {
+    padding: 20px;
+    background: #fff;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; }
+    header#header .logo-container a {
+      font-size: 40px;
+      color: #536f7a; }
+      header#header .logo-container a:hover {
+        color: #536f7a;
+        text-decoration: none; }
+  header#header .search-container {
+    margin-top: 15px; }
+    @media screen and (min-width: 768px) {
+      header#header .search-container {
+        margin-top: 0; } }
+    header#header .search-container input {
+      width: 80%;
+      height: 50px;
+      border: 0;
+      background: none; }
+      @media screen and (min-width: 768px) {
+        header#header .search-container input {
+          height: 98px;
+          width: 90%; } }
+    header#header .search-container .btn-default {
+      background: #c8282a;
+      height: 50px;
+      border: 0;
+      border-bottom-right-radius: 15px;
+      width: 18%; }
+      @media screen and (min-width: 768px) {
+        header#header .search-container .btn-default {
+          width: 9%;
+          height: 100px; } }
+    header#header .search-container form i {
+      font-size: 30px;
+      padding-top: 0;
+      color: #fff; }
+      @media screen and (min-width: 992px) {
+        header#header .search-container form i {
+          font-size: 40px; } }
+      @media screen and (min-width: 768) {
+        header#header .search-container form i {
+          padding-top: 30px; } }
+  header#header .menuMobile {
+    font-size: 36px;
+    color: #536f7a;
+    display: block;
+    margin-top: 25px; }
+
+section.container #main-content {
+  margin-bottom: 50px; }
+  section.container #main-content .sidebar-container {
+    background: #f5f5f5;
+    padding: 20px 0; }
+    section.container #main-content .sidebar-container a {
+      color: #767676; }
+      section.container #main-content .sidebar-container a:hover {
+        text-decoration: underline;
+        color: inherit; }
+    section.container #main-content .sidebar-container .profile-container img.img-profile {
+      max-width: 50%;
+      margin: 0 auto;
+      display: block; }
+    section.container #main-content .sidebar-container .profile-container h3 {
+      color: #c8282a; }
+    section.container #main-content .sidebar-container .profile-container h4 {
+      color: #536f7a; }
+    section.container #main-content .sidebar-container ul {
+      margin: 0;
+      margin-bottom: 20px;
+      padding: 0;
+      list-style-type: none;
+      border-top: 1px solid #767676; }
+      section.container #main-content .sidebar-container ul li {
+        padding: 15px;
+        background: none;
+        border-bottom: 1px solid #767676; }
+        section.container #main-content .sidebar-container ul li:hover {
+          background: #f5f5f5; }
+        section.container #main-content .sidebar-container ul li i {
+          color: #767676; }
+  section.container #main-content #menu {
+    margin-bottom: 30px; }
+    section.container #main-content #menu nav.navigation ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none; }
+      section.container #main-content #menu nav.navigation ul li {
+        float: left;
+        background: none;
+        color: #fff;
+        width: 25%;
+        text-align: center;
+        padding: 20px 0;
+        border: 1px solid #767676;
+        border-right: 0; }
+        section.container #main-content #menu nav.navigation ul li a {
+          padding: 2% 10%; }
+          section.container #main-content #menu nav.navigation ul li a:hover {
+            text-decoration: none; }
+        section.container #main-content #menu nav.navigation ul li:hover {
+          background: #767676; }
+        section.container #main-content #menu nav.navigation ul li:hover > a {
+          color: #fff; }
+        section.container #main-content #menu nav.navigation ul li:last-child {
+          border-right: 1px solid #767676; }
+  section.container #main-content .event-container {
+    background: #fff; }
+    section.container #main-content .event-container > div:first-child {
+      background: #c8282a; }
+      section.container #main-content .event-container > div:first-child h3 {
+        font-size: 18px;
+        color: #fff;
+        margin: 0;
+        padding: 15px;
+        text-align: center; }
+    section.container #main-content .event-container .event {
+      padding: 15px;
+      border-bottom: 1px solid #536f7a; }
+      section.container #main-content .event-container .event.last-event {
+        border-bottom: 0; }
+      section.container #main-content .event-container .event .event-cal {
+        position: relative;
+        float: left;
+        margin-right: 10px; }
+        section.container #main-content .event-container .event .event-cal i {
+          font-size: 30px;
+          color: #536f7a;
+          z-index: 1; }
+        section.container #main-content .event-container .event .event-cal span {
+          position: absolute;
+          top: 8px;
+          left: 6px;
+          z-index: 100;
+          color: #c8282a; }
+      section.container #main-content .event-container .event .event-info {
+        float: left; }
+        section.container #main-content .event-container .event .event-info h5, section.container #main-content .event-container .event .event-info p {
+          margin: 0; }
+section.container .campaign-container-box {
+  margin-right: -15px;
+  margin-left: -15px; }
+  @media screen and (min-width: 768px) {
+    section.container .campaign-container-box {
+      margin: 0; } }
+  section.container .campaign-container-box .campaign-container {
+    padding: 0; }
+    @media screen and (min-width: 768px) {
+      section.container .campaign-container-box .campaign-container {
+        padding: 15px; } }
+section.container .add-campaign {
+  background: #fff;
+  padding: 30px 0; }
+  section.container .add-campaign h3 {
+    color: #536f7a;
+    border-bottom: 1px solid #536f7a;
+    padding-bottom: 10px;
+    margin-bottom: 0; }
+  section.container .add-campaign a.btn-cta {
+    display: block;
+    float: right;
+    color: #fff;
+    background: #536f7a;
+    padding: 10px 30px; }
+    section.container .add-campaign a.btn-cta:hover {
+      text-decoration: none;
+      background: #c8282a; }
+section.container .campaign {
+  background: #fff;
+  margin: 30px 0;
+  padding: 30px 0; }
+  section.container .campaign a.show-detail:hover {
+    color: #c8282a; }
+  section.container .campaign h3 {
+    margin: 0;
+    margin-bottom: 15px; }
+  section.container .campaign img {
+    margin-right: 15px;
+    float: left; }
+  section.container .campaign h4 {
+    border-bottom: 1px solid #536f7a;
+    padding-bottom: 10px;
+    margin-bottom: 0; }
+  section.container .campaign a.btn-cta {
+    display: block;
+    float: right;
+    color: #fff;
+    background: #536f7a;
+    padding: 10px 30px; }
+    section.container .campaign a.btn-cta:hover {
+      text-decoration: none;
+      background: #c8282a;
+      color: #fff; }
+  section.container .campaign a:hover {
+    text-decoration: none; }
+section.container .campaign-info {
+  margin-bottom: 30px; }
+  section.container .campaign-info h4 {
+    margin-top: 30px; }
+section.container .campaign-detail {
+  display: none;
+  margin-bottom: 30px; }
+  section.container .campaign-detail.last-campaign {
+    margin-bottom: 0; }
+  section.container .campaign-detail a:hover {
+    color: #c8282a; }
+section.container .campaign-detail > div[class^="col-"] {
+  background: #f5f5f5;
+  padding-top: 15px;
+  padding-bottom: 15px; }
+  section.container .campaign-detail > div[class^="col-"] h5 {
+    padding: 5px;
+    background: #fff; }
+    @media screen and (min-width: 992px) {
+      section.container .campaign-detail > div[class^="col-"] h5 {
+        padding: 15px; } }
+  section.container .campaign-detail > div[class^="col-"] i:first-child {
+    font-size: 85px;
+    padding-left: 30px; }
+
+p.copy {
+  text-align: center; }
+  @media screen and (min-width: 768px) {
+    p.copy {
+      text-align: inherit; } }
+
+p.credits {
+  text-align: center; }
+  @media screen and (min-width: 768px) {
+    p.credits {
+      text-align: right; } }
+
+#menuMobile:not(.mm-menu) {
+  display: none; }
+
+.no-margin {
+  margin: 0; }
+
+.no-padding {
+  padding: 0; }
+
+/*# sourceMappingURL=style.css.map */

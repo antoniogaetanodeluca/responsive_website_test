@@ -1,0 +1,405 @@
+body {
+	font-family: "Arial", Helvetica, sans-serif;
+	background: $background;
+}
+
+a:hover, a:active, a:visited {
+	text-decoration: underline;
+
+}
+
+*:focus {
+    outline: none;
+}
+
+//header
+
+header#header {
+	margin-bottom: 15px;
+
+	@media screen and (min-width: 768){
+		margin-bottom: 50px;
+	}
+
+	.logo-container {
+		padding: 20px;
+		background: $white;
+		text-align: center;
+		border-bottom: 1px solid $white;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+
+		a {
+			font-size: 40px;
+			color: $blue;
+			&:hover {
+				color: $blue;
+				text-decoration: none;
+			}
+		}		
+	}
+
+	//search
+	.search-container {
+		margin-top: 15px;
+		@media screen and (min-width: 768px){
+			margin-top: 0;
+		}
+
+		input {
+			width: 80%;
+			height: 50px;
+			border: 0;
+			background: none;
+			@media screen and (min-width: 768px){
+				height: 98px;
+				width: 90%;
+			}
+		}
+
+		.btn-default {
+			background: $red;
+			height: 50px;
+			border: 0;
+			border-bottom-right-radius: 15px;
+			width:18%;
+			@media screen and (min-width: 768px){
+				width:9%;
+				height: 100px;
+			}
+		}
+
+		form i {
+			font-size: 30px;
+			padding-top: 0;
+			color: $white;
+			
+			@media screen and (min-width: 992px){
+				font-size: 40px;
+			}
+			@media screen and (min-width: 768){
+				padding-top: 30px;
+			}
+		}
+	}
+
+	.menuMobile {
+		font-size: 36px;
+		color: $blue;
+		display: block;
+		margin-top: 25px;
+	}
+}
+
+//content
+
+section.container {	
+
+	#main-content {		
+		margin-bottom: 50px;
+		
+
+		//sidebar
+		.sidebar-container {
+			background: $light_gray;
+			padding: 20px 0;
+
+			a {
+				color: $gray;
+				&:hover {
+					text-decoration: underline;
+					color: inherit;
+				}
+			}
+
+			.profile-container {
+				img.img-profile {
+					max-width: 50%;
+					margin: 0 auto;
+					display: block;
+				}
+				h3 {
+					color: $red;
+				}
+				h4 {
+					color: $blue;
+				}
+			}
+
+			ul {
+				margin: 0;
+				margin-bottom: 20px;
+				padding: 0;
+				list-style-type: none;
+				border-top: 1px solid $gray;
+				
+
+				li {
+					padding: 15px;
+					background: none;
+					border-bottom: 1px solid $gray;
+
+					&:hover {
+						background: $light_gray;
+					}
+
+					i {
+						color: $gray;
+					}
+				}
+				
+			}
+		}
+
+		#menu {
+
+			margin-bottom: 30px;
+
+			nav.navigation {
+				ul {
+					margin: 0;
+					padding: 0;
+					list-style-type: none;
+
+					li {
+						float: left;
+						background: none;
+						color: $white;
+						width: 25%;
+						text-align:center;
+						padding: 20px 0;
+						border: 1px solid $gray;
+						border-right: 0;
+						
+
+						a {
+							padding: 2% 10%;
+							&:hover {
+								text-decoration: none;
+							}
+						}
+
+						&:hover { background: $gray; }
+						&:hover > a {
+							color: $white;
+						}
+
+						&:last-child {
+							border-right: 1px solid $gray;
+						}
+					}
+				}
+			}
+		}
+
+		//events
+		.event-container {
+
+			background: $white;
+			
+			& > div:first-child {
+				background: $red;
+
+				h3 {
+					font-size: 18px;
+					color: $white;
+					margin: 0;
+					padding: 15px;
+					text-align: center;
+				}
+			}
+
+			.event {
+				
+				padding: 15px;
+				border-bottom: 1px solid $blue;
+
+				&.last-event {
+					border-bottom: 0;
+				}
+
+				.event-cal {
+					position: relative;
+					float: left;
+					margin-right:10px;
+				
+					i {
+						font-size: 30px;
+						color: $blue;
+						z-index: 1;
+					}
+
+					span {
+						position: absolute;
+						top: 8px;
+						left: 6px;
+						z-index:100;
+						color: $red;
+					}
+				}
+
+				.event-info {
+					float: left;
+					h5, p {
+						margin: 0;
+					}
+				}
+			}
+		}
+	}
+
+	//campaign
+
+	.campaign-container-box {
+		margin-right: -15px;
+		margin-left: -15px;
+
+		
+		@media screen and (min-width:768px){
+			margin: 0
+
+		}
+
+		.campaign-container {
+			padding: 0;
+
+			@media screen and (min-width:768px){
+				padding: 15px
+			}
+		}
+	}
+
+	.add-campaign {
+		background: $white;
+		padding: 30px 0;
+		h3 { 
+			color: $blue;
+			border-bottom: 1px solid $blue;
+			padding-bottom: 10px;
+			margin-bottom: 0;
+		}
+		a.btn-cta {
+			display: block;
+			float: right;
+			color: $white;
+			background: $blue;
+			padding: 10px 30px;
+			&:hover {
+				text-decoration:none;
+				background: $red;			
+			}
+		}
+	}
+
+	.campaign {
+		background: $white;
+		margin: 30px 0;
+		padding: 30px 0;
+
+		a.show-detail {
+			&:hover {
+				color: $red;
+			}
+		}
+
+		h3 {
+			margin: 0;
+			margin-bottom: 15px;
+		}
+
+		img {
+			margin-right: 15px;
+			float: left;
+		}
+
+		h4 {
+			border-bottom: 1px solid $blue;
+			padding-bottom: 10px;
+			margin-bottom: 0;
+		}
+
+		a.btn-cta {
+			display: block;
+			float: right;
+			color: $white;
+			background: $blue;
+			padding: 10px 30px;
+			&:hover {
+				text-decoration:none;				
+				background: $red;
+				color: $white;
+			}
+		}
+		a:hover {
+			text-decoration: none;
+			
+		}
+	}
+
+	.campaign-info {
+		margin-bottom: 30px;
+
+		h4 {
+			margin-top: 30px;
+		}
+	}
+
+	.campaign-detail {
+		display: none;
+		margin-bottom: 30px;
+		&.last-campaign {
+			margin-bottom: 0;
+		}
+
+		a:hover {
+			color: $red;
+		}
+	}
+
+	.campaign-detail > div[class^="col-"] {
+		background: $light_gray;
+		padding-top: 15px;
+		padding-bottom: 15px;
+
+		h5 {
+			padding: 5px;
+			@media screen and (min-width: 992px){
+				padding: 15px;
+			}
+			background: $white;
+		}
+
+		i:first-child {
+			font-size: 85px;
+			padding-left: 30px;
+		}
+	}
+}
+
+//footer
+p.copy {
+	text-align: center;
+	@media screen and (min-width: 768px){
+		text-align: inherit;
+	}
+}
+p.credits {
+	text-align: center;
+	@media screen and (min-width: 768px){
+		text-align: right;
+	}
+}
+
+//generic
+#menuMobile:not( .mm-menu ) {
+   display: none;
+}
+
+.no-margin {
+	margin: 0;
+}
+
+.no-padding {
+	padding: 0;
+}
+
